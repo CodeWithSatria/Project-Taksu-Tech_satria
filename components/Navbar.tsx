@@ -16,9 +16,11 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
+      if (navbar){
       const isScrolled = window.scrollY > 0;
       navbar.style.backgroundColor = isScrolled ? '#fff' : 'transparent';
       navbar.style.borderBottom = isScrolled ? '1px solid #ccc' : 'none';
+    }
     };
 
     window.addEventListener('scroll', handleScroll);
