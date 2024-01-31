@@ -1,6 +1,13 @@
 import "../app/globals.css";
 
-const ProjectCard = ({ imageSrc, title, description }) => {
+
+interface ProjectCardProps {
+  imageSrc: string;
+  title: string;
+  description: string;
+}
+
+const ProjectCard = ({ imageSrc, title, description }: ProjectCardProps) => {
   return (
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-2xl">
       <div className="h-[600px] w-[500px]">
