@@ -35,7 +35,7 @@ const Projects = () => {
   const projectData = [
     {
       imageSrc: 
-        "/project-1.png",
+        "/Project-1.png",
       title: "Creating Anime Website",
       description:
         "Tried to Create a clone version of Crunchyroll, i called it Crunchyflip",
