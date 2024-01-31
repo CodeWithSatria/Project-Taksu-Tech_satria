@@ -4,6 +4,7 @@ import Footer from "@/components/Footer"
 import Introduction from "@/components/Introduction"
 import Banner from '@/components/Banner'
 import Projects from '@/components/Projects'
+import Script from 'next/script'
 
 export const metadata = {
   title: 'Satria CV     ',
@@ -32,7 +33,7 @@ export default function RootLayout({
           <Projects />
         </main>
         <Footer/>
-        <script src="index.js"></script>
+        <Script src="index.js" strategy="beforeInteractive" />
       </body>
     </html>
   )
