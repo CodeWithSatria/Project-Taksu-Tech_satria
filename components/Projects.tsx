@@ -5,9 +5,10 @@ interface ProjectCardProps {
   imageSrc: string;
   title: string;
   description: string;
+  projectLink?: string;
 }
 
-const ProjectCard = ({ imageSrc, title, description }: ProjectCardProps) => {
+const ProjectCard = ({ imageSrc, title, description, projectLink }: ProjectCardProps) => {
   return (
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-2xl">
       <div className="h-[600px] w-[500px]">
@@ -23,9 +24,18 @@ const ProjectCard = ({ imageSrc, title, description }: ProjectCardProps) => {
         <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           {description}
         </p>
-        <button className="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+        {projectLink? (
+          <a href={projectLink} target="_blank" rel="noopener noreferrer">
+            <button className="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+            See More
+            </button>
+          </a>
+        ) : (
+          <button className="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
           See More
         </button>
+        )}
+        
       </div>
     </div>
   );
@@ -39,18 +49,21 @@ const Projects = () => {
       title: "Creating Anime Website",
       description:
         "Tried to Create a clone version of Crunchyroll, i called it Crunchyflip",
+        projectLink: "https://drive.google.com/file/d/1_9FF0KFr-hdd3oV1uwb134xOoKgdWCD7/view?usp=sharing"
     },
     {
       imageSrc:
         "/TMDB.png",
       title: "Website API TMDB",
       description: "Try to applying API to try a website TMDB (The Movie Database)",
+      projectLink: "https://drive.google.com/drive/folders/1y7Upzuw6wLGZevgPM5LwK0I2QNFMh4Bg?usp=drive_link"
     },
     {
       imageSrc:
         "/suit.jpeg",
       title: "Created Rock Paper Scissors game",
       description: "I Created a Rock Paper Scissors game using cxxdroid (android c++ text editor) ",
+      projectLink: "https://youtu.be/tv4x2KrG-gA?si=FsloBhA4vVzXnG2P"
     },
   ];
 
