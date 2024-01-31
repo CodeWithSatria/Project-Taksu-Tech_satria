@@ -5,6 +5,14 @@ import { useMediaQuery } from 'react-responsive';
 import NextLink from 'next/link';
 import { Nav_links } from '@/source';
 
+
+interface Header {
+  key: string;
+  href: string;
+  label: string;
+}
+
+
 const Navbar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -29,7 +37,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const getHeaderClass = (header) => {
+  const getHeaderClass = (header : Header) => {
     return header.key === 'download_CV'
       ? 'text-[#191919] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300'
       : 'text-[#191919]';
@@ -44,7 +52,7 @@ const Navbar = () => {
               <div className={` cursor-pointer ${getHeaderClass(header)}`}>
                 <span className="text-xl flex mx-4 my-2 justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 ">
                   {header.label}
-                </span>
+                </span> 
               </div>
             </NextLink>
           ))}
