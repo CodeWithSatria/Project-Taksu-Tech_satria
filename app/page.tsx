@@ -7,7 +7,7 @@ export default function Home() {
           <div className="relative flex items-center justify-center gap-[120px]">
             <div className="flex flex-col max-w-[60rem] leading-[1.2]">
               <h1 className="text-[4rem]">Front-End Developer</h1>
-              <p className="text-lg text-[#555]">Hey, my name is Satria Bela Pratama a passionate Front-end Developer based in Bali, Indonesia.</p>
+              <p className="text-lg text-[#555]">Hey, i am Satria Bela Pratama a passionate Front-end Developer based in Bali, Indonesia.</p>
               <div className="pt-[40px]">
                 <span className="w-32 flex gap-10">
                   <a href="https://github.com/CodeWithSatria" >
