@@ -41,6 +41,14 @@ body {
   border-radius: 15px;
 }
 
+.main-photo {
+  border-radius: 50%;
+  background-size: cover;
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
+
 .hero {
   display: flex;
   height: 80vh;
@@ -78,4 +86,3 @@ body {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
-

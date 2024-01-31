@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ imageSrc, title, description, projectLink }: ProjectCardProps) => {
   return (
-    <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-2xl">
+    <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-2xl w-full">
       <div className="h-[600px] w-[500px]">
         <img
           className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"

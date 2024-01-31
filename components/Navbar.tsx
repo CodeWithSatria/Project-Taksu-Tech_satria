@@ -45,14 +45,14 @@ const Navbar = () => {
 
   const renderMobileNav = () => {
     return (
-      <div className={`w-screen md:hidden absolute top-0 z-[999] bg-white`}>
+      <div className={`w-full md:hidden absolute top-0 z-[999] bg-white`}>
         <div className="flex flex-col md:flex md:flex-row mt-16 md:mt-0  ">
           {Nav_links.map((header) => (
             <NextLink href={header.href} key={header.key}>
               <div className={` cursor-pointer ${getHeaderClass(header)}`}>
                 <span className="text-xl flex mx-4 my-2 justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 ">
                   {header.label}
-                </span> 
+                </span>
               </div>
             </NextLink>
           ))}
