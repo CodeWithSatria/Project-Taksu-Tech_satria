@@ -34,7 +34,8 @@ const ProjectCard = ({ imageSrc, title, description }: ProjectCardProps) => {
 const Projects = () => {
   const projectData = [
     {
-      imageSrc: "/project-1.png",
+      imageSrc: 
+        "/project-1.png",
       title: "Creating Anime Website",
       description:
         "Tried to Create a clone version of Crunchyroll, i called it Crunchyflip",
