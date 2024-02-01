@@ -20,16 +20,11 @@
 html {
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
-  height: max-content;
-  width: fit-content;
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
-  width: 100vw;
 }
 
 .self-photo {
@@ -41,15 +36,9 @@ body {
   border-radius: 15px;
 }
 
-.main-photo {
-  border-radius: 50%;
-  background-size: cover;
-  display: flex;
-  width: 500px;
-  height: 500px;
-}
-
 .hero {
+  overflow: hidden;
+  background-size: cover;
   display: flex;
   height: 80vh;
   flex-direction: column;

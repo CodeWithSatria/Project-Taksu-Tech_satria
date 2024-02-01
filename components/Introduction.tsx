@@ -2,7 +2,7 @@ import '../app/globals.css';
 
 const Navbar = () => {
   return (
-    <div id="intro" className='grid md:grid-cols-4 md:grid-rows-2 gap-6 p-[198px]'>
+    <div id="intro" className='grid md:grid-cols-4 md:grid-rows-2 gap-6 p-[100px] md:p-[200px]' >
         <div className='col-start-1 row-start-2  md:col-start-1 md:row-start-1'>
           <h1 className='font-bold text-4xl mb-4'>My Resume</h1>
           <span className='mb-2 text-2xl text-[#555]'>It is all about me</span>
