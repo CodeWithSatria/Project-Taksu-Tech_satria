@@ -7,7 +7,7 @@ import Projects from '@/components/Projects'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Satria CV     ',
+  title: 'Satria CV',
   description: 'My Personal CV',
 }
 
