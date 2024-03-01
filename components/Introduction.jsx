@@ -36,7 +36,7 @@ const Introduction = () => {
         <div className='col-start-1 row-start-1 row-span-2 md:col-start-2 md:col-ends-2 md:row-start-1'>
           <img className='self-photo' src="http://localhost:1337/uploads/Introduction_634fad99e1.jpeg" alt="" />
         </div>
-        <div className="col-start-1 row-start-3 md:col-start-3 md:col-ends-3 md:row-start-1 bg-gray-200 rounded-2xl">
+        <div className="col-start-1 row-start-3 md:col-start-3 mda:col-ends-3 md:row-start-1 bg-gray-200 rounded-2xl">
           <h1 className='text-xl font-bold mb-4 m-4'>{myResume.aboutMe_heading}</h1>
           <p className=' mx-4 text-[#555]'>{myResume.aboutMe_desc}</p>
           <br />
