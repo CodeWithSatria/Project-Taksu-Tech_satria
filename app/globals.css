@@ -30,7 +30,7 @@ body {
 .self-photo {
   width: 100%;
   height: auto;
-  min-height: 476px;
+  min-height: 532px;
   max-width: 660px;
   max-height: 600px;
   border-radius: 15px;
@@ -50,7 +50,7 @@ body {
 .image {
   -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
-  background-image: url("/self-photo-2.jpeg");
+  background-image: url("http://localhost:1337/uploads/self_photo_2_03eb06361d.jpeg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
